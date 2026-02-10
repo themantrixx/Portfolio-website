@@ -5,7 +5,7 @@ export const portfolioData = {
     role: "Final-Year Computer Science Student",
     tagline: "Exploring the intersection of Software and Hardware.",
     about: "Final-year B.Tech student at KIIT Bhubaneswar with experience in application development. Comfortable in Linux with basic shell scripting and looking to gain hands-on experience in understanding how software interacts with hardware.",
-    avatar: "/profile.jpg", // Local image from public folder
+    avatar: "/hero-image.png", // Local image from public folder
     social: [
         { name: "GitHub", url: "https://github.com/themantrixx", icon: Github },
         { name: "LinkedIn", url: "https://www.linkedin.com/in/shreemant-s-9a4919260/", icon: Linkedin },
