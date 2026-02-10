@@ -28,6 +28,20 @@ const Hero = () => {
                             Hi, I'm <span className="text-gradient hover:opacity-80 transition-opacity">{name}</span>
                         </h1>
 
+                        {/* Mobile Profile Image */}
+                        <div className="block lg:hidden mb-8 mx-auto w-64 h-64 relative">
+                            <div className="absolute inset-0 border border-primary/20 rounded-full animate-spin-slow" />
+                            <div className="absolute inset-3 border border-accent/20 rounded-full animate-spin-slow" style={{ animationDirection: 'reverse', animationDuration: '25s' }} />
+                            <div className="absolute inset-6 rounded-full overflow-hidden shadow-2xl shadow-primary/20 border-2 border-primary/50 group">
+                                <img
+                                    src={portfolioData.avatar}
+                                    alt={name}
+                                    className="w-full h-full object-cover"
+                                />
+                                <div className="absolute inset-0 bg-primary/10" />
+                            </div>
+                        </div>
+
                         <h2 className="text-2xl md:text-3xl text-muted font-medium mb-6">
                             {role}
                         </h2>
@@ -73,7 +87,7 @@ const Hero = () => {
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="relative hidden md:block lg:block mx-auto"
+                        className="relative hidden lg:block mx-auto"
                     >
                         <div className="relative w-80 h-80 md:w-96 md:h-96">
                             {/* Decorative Circles */}
