@@ -45,8 +45,8 @@ export const portfolioData = {
             title: "KIIT Student Management App",
             description: "A Flutter-based mobile app to manage student academic activities digitally. Features QR-based attendance, secure login, and real-time data syncing.",
             tech: ["Flutter", "Firebase Auth", "Real-time Database"],
-            link: "#",
-            repo: "#",
+            link: "https://kiitsap.netlify.app/",
+            repo: "https://github.com/themantrixx/KIIT-Student-Management-App",
             featured: true,
             image: "/project_student_app_fun.png"
         }
