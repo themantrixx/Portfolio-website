@@ -42,12 +42,13 @@ const Projects = () => {
                                     alt={project.title}
                                     className="hologram-image w-full h-full object-cover transform transition-transform duration-700"
                                 />
-                                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4 backdrop-blur-[2px] z-30">
+                                <div className="absolute inset-0 bg-black/60 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4 backdrop-blur-[2px] z-30">
                                     <a
                                         href={project.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="p-3 bg-white text-black rounded-full hover:bg-primary hover:text-black transition-colors transform translate-y-4 group-hover:translate-y-0 duration-300"
+                                        // Mobile: visible and in place. Desktop: hidden/translated until hover
+                                        className="p-3 bg-white text-black rounded-full hover:bg-primary hover:text-black transition-colors transform translate-y-0 md:translate-y-4 group-hover:translate-y-0 duration-300"
                                         title="View Live"
                                     >
                                         <ExternalLink size={20} />
@@ -56,7 +57,8 @@ const Projects = () => {
                                         href={project.repo}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="p-3 bg-black text-white border border-white/20 rounded-full hover:bg-white hover:text-black transition-colors transform translate-y-4 group-hover:translate-y-0 duration-300 delay-75"
+                                        // Mobile: visible and in place. Desktop: hidden/translated until hover
+                                        className="p-3 bg-black text-white border border-white/20 rounded-full hover:bg-white hover:text-black transition-colors transform translate-y-0 md:translate-y-4 group-hover:translate-y-0 duration-300 delay-75"
                                         title="View Code"
                                     >
                                         <Github size={20} />
