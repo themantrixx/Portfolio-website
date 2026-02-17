@@ -60,7 +60,7 @@ const Hero = () => {
                                 View Projects
                             </Link>
                             <a
-                                href="/resume.pdf"
+                                href="/resume_v1.pdf"
                                 className="flex items-center px-8 py-3.5 rounded-lg border border-gray-700 hover:border-gray-500 hover:bg-surface/50 transition-all bg-black/20 backdrop-blur-sm"
                             >
                                 <Download size={20} className="mr-2" /> Resume

@@ -53,7 +53,7 @@ const Navbar = () => {
                             ))}
 
                             <a
-                                href="/resume.pdf"
+                                href="/resume_v1.pdf"
                                 className="inline-flex items-center px-4 py-2 rounded-full border border-white/10 bg-white/5 text-sm font-medium text-white hover:bg-primary hover:text-black hover:border-primary transition-all duration-300"
                             >
                                 Resume <Download size={16} className="ml-2" />
